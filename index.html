@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="container">
             <div class="logo-account">
                 <h1><img src="./images/logo.png" alt="logo"></h1>
                 <form action="#">
@@ -33,7 +33,7 @@
                     </ul>
                 </div><!--account-info-->
             </div><!--logo-account-->
-        </div><!--wrapper-->
+        </div><!--container-->
         <nav class="mainmenu">
             <ul class="gnb">
                 <li><a href="">마이프로</a></li>
@@ -47,8 +47,8 @@
     </header>
 
     <main>
-        <section class="main-list">
-            <div class="wrapper">
+        <section id="main-list">
+            <div class="container">
                 <div class="slide-sub">
                     <div class="main-slide">
                         <img src="./images/slide-img1.jpg" alt="slide1">
@@ -65,16 +65,14 @@
                         </ul>
                     </div><!--sub-list-->
                 </div><!--slide-sub-->
-            </div><!--wrapper-->
+            </div><!--container-->
         </section>
 
-        <section>
-            <div class="wrapper">
+        <section id="clearwhey">
+            <div class="container">
                 <div class="info-video">
-                    <div class="flex-box">
-                        <div class="clearwhey-info">
-                            <img src="./images/clear-whey.webp" alt="clearwhey">
-                            <div class="content-txt"> 
+                    <div class="flex-wrapper">
+                            <div class="clearwhey-info"> 
                                 <h2>클리어 웨이 아이솔레이티드</h2>
                                 <p>
                                     *2019 유럽 스페셜리스트 스포츠 뉴트리션 어워드 
@@ -102,71 +100,109 @@
                                         </p>
                                     </li>
                                 </ul>
-                            </div><!--content-txt-->
-                        </div><!--clearwhey-info-->
-                            <video src="./images/clear-whey1.mp4" controls></video>
-                    </div><!--flex-box-->
+                            </div><!--clearwhey-info-->
+                        <video src="./images/clear-whey1.mp4" controls></video>
+                    </div><!--flex-wrapper-->
                 </div><!--info-video-->
-            </div><!--wrapper-->
+            </div><!--container-->
         </section>
 
         <section class="best-seller">
-            <div class="wrapper">
-                <hr>
-                <h2>BEST SELLER</h2>
-                <div class="slide-btn">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="best-slide">
-                    <div class="best-info">
-                        <a href="#">
-                            <img src="./images/bestseller-cre.jpg" alt="creatine">
-                            <span>모노 크레아틴</span>
-                            <strong>가격: 29,900KRW</strong>
-                            <button>바로구매</button>
-                        </a>
+            <div class="btn-info">
+                <div class="container">
+                    <hr>
+                    <h2>BEST SELLER</h2>
+                    <div class="flex-wrapper">
+                        <div class="slide-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="flex-container">
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/bestseller-cre.jpg" alt="creatine">
+                                    <strong>모노 크레아틴</strong>
+                                    <strong>가격: 29,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/bestseller-iso.jpg" alt="isolate">
+                                    <strong>임펙트 웨이 아이솔레이트</strong>
+                                    <strong>가격: 39,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>                    
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/bestseller-clear.jpg" alt="clear-whey">
+                                    <strong>클리어 웨이 아이솔레이트</strong>
+                                    <strong>가격: 64,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/bestseller-pro.jpg" alt="protein">
+                                    <strong>임펙트 웨이 프로틴</strong>
+                                    <strong>가격:19,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/best-seller-browine.jpg" alt="clear-whey">
+                                    <strong>프로틴 브라우니</strong>
+                                    <strong>가격: 32,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>
+                            <div class="best-info">
+                                <a href="#">
+                                    <img src="./images/best-seller-omega.jpg" alt="clear-whey">
+                                    <strong>필수 오메가-3</strong>
+                                    <strong>가격: 10,900KRW</strong>
+                                    <button>바로구매</button>
+                                </a>
+                            </div>
+                        </div><!--flex-container-->
+                        </div><!--best-slide-->
+                        <div class="slide-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="best-info">
-                        <a href="#">
-                            <img src="./images/bestseller-iso.jpg" alt="isolate">
-                            <span>임펙트 웨이 아이솔레이트</span>
-                            <strong>가격: 39,900KRW</strong>
-                            <button>바로구매</button>
-                        </a>
-                    </div>                    
-                    <div class="best-info">
-                        <a href="#">
-                            <img src="./images/bestseller-clear.jpg" alt="clear-whey">
-                            <span>클리어 웨이 아이솔레이트</span>
-                            <strong>가격: 64,900KRW</strong>
-                            <button>바로구매</button>
-                        </a>
-                    </div>
-                    <div class="best-info">
-                        <a href="#">
-                            <img src="./images/bestseller-pro.jpg" alt="protein">
-                            <span>임펙트 웨이 프로틴</span>
-                            <strong>가격:19,900KRW</strong>
-                            <button>바로구매</button>
-                        </a>
-                    </div>
-                    <div class="best-info">
-                        <a href="#">
-                            <img src="./images/bestseller-clear.jpg" alt="clear-whey">
-                            <span>모노 크레아틴</span>
-                            <strong>가격: 29,900KRW</strong>
-                            <button>바로구매</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="slide-btn">
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+                </div><!--container-->
+            </div><!--btn-info-->
         </section>
 
+        <section id="purpose">
+            <div class="container">
+                <div class="flex container">
+                    <div class="male">
+                        <img src="./images/male.jpg" alt="male">
+                        <h2>남성</h2>
+                        <div class="purpose-male">
+                            <h3>근력 향상</h3>
+                            <h3>체중 감량</h3>
+                            <h3>린매스업</h3>
+                        </div>
+                    </div><!--male-->                    
+                    <div class="female">
+                        <img src="./images/female.jpg" alt="female">
+                        <h2>여성</h2>
+                        <div class="purpose-female">
+                            <h3>근력 향상</h3>
+                            <h3>다이어트 &
+                                체중 감량체중 감량</h3>
+                            <h3>탄력 유지</h3>
+                        </div>
+                    </div><!--male-->
+                </div>
+                
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
