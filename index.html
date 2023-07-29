@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -13,27 +12,25 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo-account">
-                <h1><img src="./images/logo.png" alt="logo"></h1>
-                <form action="#">
+            <div class="logo-search-account">
+                <h1><img src="./images/logo2.png" alt="logo"></h1>
+                <div class="search-account">
                     <div class="search-input-box">
-                        <input type="search" name="search" class="search">
-                        <div class="search-icon">
-                            <img src="./images/searchicon.png" alt="search-icon">
-                        </div>
-                    </div>
-                </form>
-                <div class="account-info">
-                    <ul class="account">
-                        <li id="log-in"><a href="#"><img src="./images/account.gif" alt="account"></a></li>
-                        <li><a href="#log-in">계정</a></li>
-                    </ul>
-                    <ul class="shopping">
-                        <li id="shopping"><a href="#"><img src="./images/bucket.gif" alt="shopping"></a></li>
-                        <li><a href="#shopping">장바구니</a></li>
-                    </ul>
-                </div><!--account-info-->
-            </div><!--logo-account-->
+                        <form action="#">
+                            <input type="search" name="search" class="search" value="검색하기">
+                            <div class="search-icon">
+                                <img src="./images/searchicon.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div><!--search-input-box-->
+                    <div class="account-info">
+                        <ul>
+                            <li><a href="#">계정</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </div><!--account-info-->
+                </div><!--search-account-->
+            </div><!--logo-search-account-->
         </div><!--container-->
         <nav class="mainmenu">
             <ul class="gnb">
@@ -50,11 +47,17 @@
     <main>
         <section id="main-list">
             <div class="container">
-                <div class="slide-sub">
-                    <div class="main-slide">
-                        <img src="./images/slide-img1.jpg" alt="slide1">
-                        <img src="./images/slide-img2.jpg" alt="slide2">
-                    </div>
+                <h2>main-slide</h2>
+                <article class="slide">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/slide-img1.jpg" alt="slide"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/slide-img2.jpg" alt="slide2"></a>
+                        </li>
+                    </ul>
+                </article>
                     <div class="sub-list">
                         <ul>
                             <li><a href="#"><img src="./images/protein.gif" alt="protein">단백질 보충제</a></li>

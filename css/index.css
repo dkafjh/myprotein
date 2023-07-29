@@ -1,6 +1,101 @@
 @charset "utf-8";
 
-.wrapper{
+.container{
     width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 10px;
 }
+
+/* =======header========= */
+
+header {
+    width: 100%;
+    padding-top: 21px;
+    vertical-align: center
+}
+
+.logo-search-account {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-search-account > h1 {
+    margin-left:50%;
+    width: 375px;
+    transform: translate(-50%);
+}
+
+.logo-search-account > h1 > img {
+    width: 100%;
+}
+
+.search-account {
+    width:235px;
+}
+
+.search-input-box {
+    position: relative;
+}
+
+.search-input-box input[type=search]{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 3px;
+}
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+.account-info ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-info ul > li {
+    padding-left: 33px;
+}
+
+.account-info ul > li:first-child {
+    background: url(../images/account.gif) no-repeat;
+    background-size: contain;
+}
+
+.account-info ul > li:last-child {
+    background: url(../images/bucket.gif) no-repeat;
+    background-size: contain;
+}
+
+.mainmenu{
+    margin-top: 32px;
+    width: 100%;
+    background-color: #008190;
+}
+
+.gnb  {
+    width: 682px;
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.gnb > li {
+    width: 117px;
+}
+
+.gnb > li > a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.gnb > li > a:hover {
+    font-weight: bold;
+}
+
+/* =======main========= */
+
+
