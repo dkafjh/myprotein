@@ -5,35 +5,38 @@
     margin: 0 auto;
     max-width: 1400px;
     padding: 0 10px;
+    position: relative;
 }
+
 
 /* =======header========= */
 
 header {
     width: 100%;
     padding-top: 21px;
-    vertical-align: center
 }
 
-.logo-search-account {
-    width: 100%;
+.flex-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.logo-search-account > h1 {
-    margin-left:50%;
-    width: 375px;
-    transform: translate(-50%);
-}
-
-.logo-search-account > h1 > img {
     width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.search-account {
-    width:235px;
+.flex-contaienr > .logo{
+    margin-left: 300px;
+    width: 300px
 }
+
+.logo img {
+    margin-left: 500px;
+    width: 379px;
+}
+
+
+/* logo-account */
+
 
 .search-input-box {
     position: relative;
@@ -70,32 +73,91 @@ header {
     background-size: contain;
 }
 
-.mainmenu{
-    margin-top: 32px;
-    width: 100%;
+/* main menu */
+
+.mainmenu {
+    margin-top: 30px;
+    padding: 5px 0  5px 0;
     background-color: #008190;
 }
 
-.gnb  {
-    width: 682px;
+.mainmenu .gnb {
     display: flex;
+    list-style: none;
+    width: 50%;
     margin: 0 auto;
-    padding: 5px;
+    position: relative;
 }
 
-.gnb > li {
+.mainmenu .gnb li {
     width: 117px;
+    margin: 5px 10px 5px 10px;
 }
 
-.gnb > li > a {
-    font-size: 18px;
+.mainmenu .gnb li a {
+    text-align: center;
     color: #fff;
-}
-
-.gnb > li > a:hover {
     font-weight: bold;
 }
 
+
+.mainmenu .gnb .list {
+    display: none;
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+
+.mainmenu .gnb .list li {
+    display: block;
+}
+
+.mainmenu .gnb .list li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+
+.mainmenu .gnb .list li a:hover {
+    display: flex;
+    background-color: #ddd;
+}
+
+
+
 /* =======main========= */
 
+#main-list h2 {
+    font-size: 0;
+}
 
+.slide {
+    display: flex;
+    margin-top: 64px;
+    height: 462px;
+    overflow: hidden;
+}
+
+.main-sub {
+    width: 100%;
+}
+
+.main-sub > ul {
+    margin-top: 80px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+
+.main-sub > ul > li> a > img {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.main-sub > ul > li> a {
+    font-weight: bold;
+    text-align: center;
+}

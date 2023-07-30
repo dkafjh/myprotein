@@ -11,37 +11,130 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo-search-account">
-                <h1><img src="./images/logo2.png" alt="logo"></h1>
-                <div class="search-account">
-                    <div class="search-input-box">
-                        <form action="#">
-                            <input type="search" name="search" class="search" value="검색하기">
-                            <div class="search-icon">
-                                <img src="./images/searchicon.png" alt="search-icon">
-                            </div>
-                        </form>
-                    </div><!--search-input-box-->
-                    <div class="account-info">
-                        <ul>
-                            <li><a href="#">계정</a></li>
-                            <li><a href="#">장바구니</a></li>
-                        </ul>
-                    </div><!--account-info-->
-                </div><!--search-account-->
-            </div><!--logo-search-account-->
-        </div><!--container-->
+        <div class="logo-search-account">
+            <div class="container">
+                <div class="flex-container">
+                    <div class="logo">
+                        <h1><img src="./images/logo2.png" alt="logo"></h1>
+                    </div>
+                    <div class="search-account">
+                        <div class="search-input-box">
+                            <form action="#">
+                                <input type="search" name="search" class="search" value="검색하기">
+                                <div class="search-icon">
+                                    <img src="./images/searchicon.png" alt="search-icon">
+                                </div>
+                            </form>
+                        </div><!--search-input-box-->
+                        <div class="account-info">
+                            <ul>
+                                <li><a href="#">계정</a></li>
+                                <li><a href="#">장바구니</a></li>
+                            </ul>
+                        </div><!--account-info-->
+                    </div><!--search-account-->
+                </div><!--flex container-->
+            </div><!--container-->
+        </div>
         <nav class="mainmenu">
             <ul class="gnb">
-                <li><a href="">마이프로</a></li>
-                <li><a href="">스포츠웨어</a></li>
+                <li>
+                    <a href="#">마이프로</a>
+                    <ul class="list">
+                        <li>
+                            <a href="#">단백질 보충제</a>
+                            <ul>
+                                <li><a href="#">웨이 프로틴</a></li>
+                                <li><a href="#">클리어웨이</a></li>
+                                <li><a href="#">식물성 단백질</a></li>
+                                <li><a href="#">밀크&카제인</a></li>
+                                <li><a href="#">복합 단백질</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">크레아틴</a>
+                            <ul>
+                                <li><a href="#">모노 크레아틴</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">아미노산</a>
+                            <ul>
+                                <li><a href="#">BCAA</a></li>
+                                <li><a href="#">글루타민</a></li>
+                                <li><a href="#">L-카르니틴</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">스포츠웨어</a>
+                    <ul class="list">
+                        <li>
+                            <a href="#">남성의류</a>
+                            <hr>
+                            <ul>
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">자켓 & 조끼</a></li>
+                                <li><a href="#">후디 & 스웨트 셔츠</a></li>
+                                <li><a href="#">트레이닝 반바지</a></li>
+                                <li><a href="#">스포츠 반바지</a></li>
+                                <li><a href="#">스트링거 & 탱크탑</a></li>
+                                <li><a href="#">티셔츠 &탑</a></li>
+                                <li><a href="#">전체보기
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">여성의류</a>
+                            <hr>
+                            <ul>
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">자켓 & 조끼</a></li>
+                                <li><a href="#">후디 & 스웨트 셔츠</a></li>
+                                <li><a href="#">트레이닝 바지</a></li>
+                                <li><a href="#">레깅스</a></li>
+                                <li><a href="#">스포츠  반바지</a></li>
+                                <li><a href="#">스포츠 브라</a></li>
+                                <li><a href="#">베스트 & 탱크탑</a></li>
+                                <li><a href="#">티셔츠 &탑</a></li>
+                                <li><a href="#">전체보기
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">스포츠 악세사리
+                            </a>
+                            <hr>
+                            <ul>
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">운동 가방</a></li>
+                                <li><a href="#">모자 & 글러브</a></li>
+                                <li><a href="#">언더웨어 & 양말</a></li>
+                                <li><a href="#">웨이트 트레이닝 악세사리</a></li>
+                                <li><a href="#">웨이트 트레이닝 악세사리</a></li>
+                                <li><a href="#">마스크</a></li>
+                                <li><a href="#">전체보기
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="">식품/스낵</a></li>
                 <li><a href="">비타민</a></li>
                 <li><a href="">식이요법</a></li>
                 <li><a href="">이벤트</a></li>
             </ul>
         </nav>
+        <div class="container">
+            <div class="sub-list mypro">
+                
+            </div>
+            <div class="sub-list sportwear">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -58,16 +151,16 @@
                         </li>
                     </ul>
                 </article>
-                    <div class="sub-list">
+                    <div class="main-sub">
                         <ul>
-                            <li><a href="#"><img src="./images/protein.gif" alt="protein">단백질 보충제</a></li>
-                            <li><a href="#"><img src="./images/creattine.gif" alt="creatine">크레아틴</a></li>
-                            <li><a href="#"><img src="./images/protein-bar.gif" alt="protein-bar">비타민 & 미네랄</a></li>
-                            <li><a href="#"><img src="./images/snackbar.gif" alt="bar-snack">프로틴바 & 스낵</a></li>
-                            <li><a href="#"><img src="./images/sportwear.gif" alt="sprot wear">스포츠 의류</a></li>
-                            <li><a href="#"><img src="./images/diet.gif" alt="diet">다이어트 보조 식품</a></li>
+                            <li><a href="#"><img src="./images/protien.png" alt="protein">단백질 보충제</a></li>
+                            <li><a href="#"><img src="./images/creattine.png" alt="creatine">크레아틴</a></li>
+                            <li><a href="#"><img src="./images/vitamin.png" alt="vitamin">비타민 & 미네랄</a></li>
+                            <li><a href="#"><img src="./images/protein-bar.png" alt="bar-snack">프로틴바 & 스낵</a></li>
+                            <li><a href="#"><img src="./images/sportwear.gif.png" alt="sprot wear">스포츠 의류</a></li>
+                            <li><a href="#"><img src="./images/diet.gif.png" alt="diet">다이어트 보조 식품</a></li>
                         </ul>
-                    </div><!--sub-list-->
+                    </div><!--main-sub-->
                 </div><!--slide-sub-->
             </div><!--container-->
         </section>
