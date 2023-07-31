@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: '비트로 코어';
-}
-
 ul,
 ol,
 li {
@@ -39,6 +35,10 @@ h2 {
 
 h3 {
     font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
 }
 
 p {

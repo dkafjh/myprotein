@@ -1,6 +1,69 @@
 @charset "utf-8";
 
-.container{
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VITRO PRIDE OTF';
+    src: url('VITRO-PRIDE-OTF.eot');
+    src: url('VITRO-PRIDE-OTF.eot?#iefix') format('embedded-opentype'),
+        url('VITRO-PRIDE-OTF.woff2') format('woff2'),
+        url('VITRO-PRIDE-OTF.woff') format('woff'),
+        url('VITRO-PRIDE-OTF.ttf') format('truetype'),
+        url('VITRO-PRIDE-OTF.svg#VITRO-PRIDE-OTF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_medium';
+    src: url('KBO_1.eot');
+    src: url('KBO_1.eot?#iefix') format('embedded-opentype'),
+        url('KBO_1.woff2') format('woff2'),
+        url('KBO_1.woff') format('woff'),
+        url('KBO_1.ttf') format('truetype'),
+        url('KBO_1.svg#KBO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_light';
+    src: url('KBO_2.eot');
+    src: url('KBO_2.eot?#iefix') format('embedded-opentype'),
+        url('KBO_2.woff2') format('woff2'),
+        url('KBO_2.woff') format('woff'),
+        url('KBO_2.ttf') format('truetype'),
+        url('KBO_2.svg#KBO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VITRO CORE OTF';
+    src: url('VITRO-CORE-OTF.eot');
+    src: url('VITRO-CORE-OTF.eot?#iefix') format('embedded-opentype'),
+        url('VITRO-CORE-OTF.woff2') format('woff2'),
+        url('VITRO-CORE-OTF.woff') format('woff'),
+        url('VITRO-CORE-OTF.ttf') format('truetype'),
+        url('VITRO-CORE-OTF.svg#VITRO-CORE-OTF') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font: 16px 'KBO-Dia-Gothic_bold';
+}
+
+.wrapper{
     width: 1400px;
     margin: 0 auto;
     max-width: 1400px;
@@ -25,7 +88,7 @@ header {
 }
 
 .flex-contaienr > .logo{
-    margin-left: 300px;
+    margin-left: 50%;
     width: 300px
 }
 
@@ -63,6 +126,10 @@ header {
     padding-left: 33px;
 }
 
+.account-info ul > li > a {
+    font-family: 'VITRO PRIDE OTF';
+}
+
 .account-info ul > li:first-child {
     background: url(../images/account.gif) no-repeat;
     background-size: contain;
@@ -84,13 +151,13 @@ header {
 .mainmenu .gnb {
     display: flex;
     list-style: none;
-    width: 50%;
+    width: 640px;
     margin: 0 auto;
     position: relative;
 }
 
 .mainmenu .gnb li {
-    width: 117px;
+    width: 97px;
     margin: 5px 10px 5px 10px;
 }
 
@@ -98,6 +165,7 @@ header {
     text-align: center;
     color: #fff;
     font-weight: bold;
+    font-family: 'VITRO PRIDE OTF';
 }
 
 
@@ -118,6 +186,7 @@ header {
     display: block;
     padding: 10px;
     color: #333;
+    font-family: 'VITRO PRIDE OTF';
 }
 
 .mainmenu .gnb .list li a:hover {
@@ -133,6 +202,7 @@ header {
     font-size: 0;
 }
 
+/* main-slide */
 .slide {
     display: flex;
     margin-top: 64px;
@@ -140,6 +210,7 @@ header {
     overflow: hidden;
 }
 
+/* main-sub */
 .main-sub {
     width: 100%;
 }
@@ -154,10 +225,243 @@ header {
 
 .main-sub > ul > li> a > img {
     display: block;
+    margin: 0 auto;
     margin-bottom: 25px;
 }
 
 .main-sub > ul > li> a {
-    font-weight: bold;
     text-align: center;
+    font-family: 'KBO-Dia-Gothic_medium';
+    font-weight: bold;
+    font-size: 21px;
 }
+
+/*section'clear-whey'*/
+#clearwhey {
+    margin-top: 100px;
+}
+
+#clearwhey .info-video > .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearwhey-info {
+    width: 842px;
+    height: 960px;
+}
+
+.clearwhey-info > .clearwhey-img {
+    width: 100%;
+    position: relative;
+}
+
+.clearwhey-info > .clearwhey-img > img {
+    width: 100%;
+    height: 960px;
+    max-width: cover;
+}
+
+.clearwhey-info > .content-box {
+    display: none;
+    width: 710px;
+    position: absolute;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-87.5%,-50%);
+    background-color: rgba(141, 141, 141, 0.37);
+    color: white;
+    align-items: center;
+}
+
+.clearwhey-info > .content-box > ul > li {
+    margin: 20px 0;
+}
+
+.clearwhey-info ul > li > strong {
+    margin: 40px 0;
+    font-size: 22px;
+}
+
+.clearwhey-info ul > li:nth-child(2) {
+    margin-top: 88px;
+}
+
+.clearwhey-info ul ul > li {
+    padding-top: 20px;
+    margin-top: 40px 0;
+    list-style:disc;
+}
+
+.clearwhey-info ul ul> li:nth-child(2) {
+    margin-top: 20px;
+}
+
+.clearwhey-info ul ul > li > h4 {
+    font-family: 'KBO-Dia-Gothic_medium';
+    margin-bottom: 20px;
+}
+
+.clearwhey-info ul ul > li > p {
+    font-family: 'KBO-Dia-Gothic_light';
+    font-weight: bold;
+}
+
+.info-video > .flex-container > video {
+    border: 0px;
+    width: 540px;
+}
+
+.clearwhey-info:hover > .content-box  {
+    display: block;
+}
+
+/*Best-seller*/
+
+section.best-seller {
+    width: 100%;
+    padding: 80px 0;
+    margin-top: 110px;
+}
+
+.best-logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-logo > span {
+    width: 493px;
+    height: 6px;
+    background-color: #008190;
+    border-radius: 3px;
+}
+
+.best-logo > h2 {
+    font-size: 33px;
+}
+
+.best-seller .flex-container {
+    display: flex;
+    position: relative;
+}
+
+.button-left {
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+}
+
+.button-right {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.best-seller .flex-container .slide-container {
+    width: 100%;
+    height: 700px;
+    padding: 85px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 200px;
+    overflow: hidden;
+}
+
+.best-seller .best-info {
+    min-width: 100%;
+}
+
+.best-seller .best-info > a > img {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.best-seller .best-info > a > strong {
+    font-size: 25px;
+    margin-top: 21px 
+}
+.best-seller .best-info > a > strong:last-child {
+    font-size: 21px;
+}
+
+.best-seller .best-info > a > button {
+    margin-top: 31px;
+    font-size: 21px;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #008190;
+}
+
+.best-info:hover > a > button {
+    background-color: #00565f;
+}
+
+/*#purpose*/
+
+#purpose {
+    margin-top: 80px;
+}
+
+#purpose .flex-container {
+    width: 100%;
+    height: 970px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.male {
+    width: 50%;
+    height: 970px;
+    position: relative;
+    background-image: url(../images/male.jpg);
+    background-size: cover;
+    background-position: left:0; top:0;
+}
+
+
+
+.male > h2 {
+    position: absolute;
+    top: 70px; left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-align: center;
+    font-size: 58px;
+    text-shadow: 2px solid black;
+}
+
+.purpose-male {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top:50%; left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.purpose-male > ul > li > a {
+    width: 100%;
+    color: #fff;
+
+}
+
+.female {
+    width: 50%;
+}
+
+.female > img {
+    width: 100%;
+}
+
