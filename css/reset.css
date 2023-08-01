@@ -1,5 +1,38 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'VITRO-CORE-TTF';  /* 폰트 명 */
+    font-style: normal;  /* 폰트 스타일 설정 */
+    font-weight: 100; /* 폰트 투께 */ 
+    src: url('../font/VITRO-CORE-TTF.eot'); /* IE9 미만 */
+    src: local('VITRO-CORE-TTF'),/* 웹 브라우저가 지원하지 않는 불필요한 웹 폰트 호출을 막는데 사용 */
+    url('./font/VITRO-CORE-TTF.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font/VITRO-CORE-TTF.woff2') format('woff2'),  /* WOFF의 차기 포맷 */
+    url('./font/VITRO-CORE-TTF.woff') format('woff'),  /* 표준 브라우저 */
+    url('./font/VITRO-CORE-TTF.ttf') format('truetype'),  /* Safari, Android, iOS */
+    url('./font/VITRO-CORE-TTF.svg#VITRO-CORE-TTF') format('svg');/* TTF에서도 커버가 안되는 기기들에 대한 대응 */
+    }
+
+@font-face {
+    font-family: 'KBO Dia Gothic';
+    src: url('../font/KBODiaGothicLight.eot');
+    src: url('KBODiaGothicLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/KBODiaGothicLight.woff2') format('woff2'),
+        url('../font/KBODiaGothicLight.woff') format('woff'),
+        url('../font/KBODiaGothicLight.ttf') format('truetype'),
+        url('../font/KBODiaGothicLight.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +53,7 @@ a {
 
 strong {
     display: block;
+    font-family: 'KBO-Dia-Gothic_bold';
 }
 
 img,
@@ -29,8 +63,14 @@ select {
     vertical-align: middle;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 h2 {
     font-size: 33px;
+    font-family: 'VITRO-CORE-TTF';
+    font-weight: normal;
 }
 
 h3 {
@@ -41,7 +81,13 @@ h4 {
     font-size: 24px;
 }
 
+h3,
+h4 {
+    font-family: 'KBO-Dia-Gothic_bold';
+}
+
 p {
     font-size: 22px;
+    line-height: 1.8em;
 }
 

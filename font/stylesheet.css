@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'KBO Dia Gothic';
+    src: url('KBODiaGothicBold.eot');
+    src: local('KBO Dia Gothic Bold'), local('KBODiaGothicBold'),
+        url('KBODiaGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('KBODiaGothicBold.woff2') format('woff2'),
+        url('KBODiaGothicBold.woff') format('woff'),
+        url('KBODiaGothicBold.ttf') format('truetype'),
+        url('KBODiaGothicBold.svg#KBODiaGothicBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KBO Dia Gothic';
+    src: url('KBODiaGothicMedium.eot');
+    src: local('KBO Dia Gothic Medium'), local('KBODiaGothicMedium'),
+        url('KBODiaGothicMedium.eot?#iefix') format('embedded-opentype'),
+        url('KBODiaGothicMedium.woff2') format('woff2'),
+        url('KBODiaGothicMedium.woff') format('woff'),
+        url('KBODiaGothicMedium.ttf') format('truetype'),
+        url('KBODiaGothicMedium.svg#KBODiaGothicMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VITRO PRIDE TTF';
+    src: url('VITRO-PRIDE-TTF.eot');
+    src: local('VITRO PRIDE TTF'), local('VITRO-PRIDE-TTF'),
+        url('VITRO-PRIDE-TTF.eot?#iefix') format('embedded-opentype'),
+        url('VITRO-PRIDE-TTF.woff2') format('woff2'),
+        url('VITRO-PRIDE-TTF.woff') format('woff'),
+        url('VITRO-PRIDE-TTF.ttf') format('truetype'),
+        url('VITRO-PRIDE-TTF.svg#VITRO-PRIDE-TTF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTF';
+    src: url('VITRO-CORE-TTF.eot');
+    src: local('VITRO CORE TTF'), local('VITRO-CORE-TTF'),
+        url('VITRO-CORE-TTF.eot?#iefix') format('embedded-opentype'),
+        url('VITRO-CORE-TTF.woff2') format('woff2'),
+        url('VITRO-CORE-TTF.woff') format('woff'),
+        url('VITRO-CORE-TTF.ttf') format('truetype'),
+        url('VITRO-CORE-TTF.svg#VITRO-CORE-TTF') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

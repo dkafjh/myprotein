@@ -1,42 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'KBO-Dia-Gothic_bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'VITRO PRIDE OTF';
-    src: url('VITRO-PRIDE-OTF.eot');
-    src: url('VITRO-PRIDE-OTF.eot?#iefix') format('embedded-opentype'),
-        url('VITRO-PRIDE-OTF.woff2') format('woff2'),
-        url('VITRO-PRIDE-OTF.woff') format('woff'),
-        url('VITRO-PRIDE-OTF.ttf') format('truetype'),
-        url('VITRO-PRIDE-OTF.svg#VITRO-PRIDE-OTF') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'VITRO CORE OTF';
-    src: url('VITRO-CORE-OTF.eot');
-    src: url('VITRO-CORE-OTF.eot?#iefix') format('embedded-opentype'),
-        url('VITRO-CORE-OTF.woff2') format('woff2'),
-        url('VITRO-CORE-OTF.woff') format('woff'),
-        url('VITRO-CORE-OTF.ttf') format('truetype'),
-        url('VITRO-CORE-OTF.svg#VITRO-CORE-OTF') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-body {
-    font: 18px 'KBO-Dia-Gothic_bold';
-}
-
 .wrapper{
     width: 1400px;
     margin: 0 auto;
@@ -45,6 +8,9 @@ body {
     position: relative;
 }
 
+body {
+    font-family: 'KBO Dia Gothic';
+}
 
 /* =======header========= */
 
@@ -103,7 +69,6 @@ header {
 
 .account-info ul > li > a {
     font-size: 18px;
-    font-family: 'VITRO PRIDE OTF';
 }
 
 
@@ -140,7 +105,6 @@ header {
 .gnb > li > a {
     color: #fff;
     font-size: 18px;
-    font-family: 'VITRO PRIDE OTF';
 }
 
 .gnb > li > a:hover{
@@ -179,7 +143,6 @@ header {
     padding-top: 20px;
     text-align: left;
     font-size: 18px;
-    font-family: 'KBO-Dia-Gothic_medium';
     color: #000;
 }
 
@@ -230,13 +193,12 @@ header {
 
 .main-sub > ul > li> a {
     text-align: center;
-    font-family: 'KBO-Dia-Gothic_bold';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 21px;
 }
 
 .main-sub > ul > li> a:hover {
-    font-weight: bold;
+    color: #00565f;
 }
 
 /*section'clear-whey'*/
@@ -268,7 +230,7 @@ header {
 
 .clearwhey-info > .content-box {
     width: 710px;
-    padding: 70px;
+    padding: 100px 30px;
     position: absolute;
     padding: 50px;
     top: 50%;
@@ -294,8 +256,8 @@ header {
     margin-top: 88px;
 }
 
-.clearwhey-info ul ul > li {
-    padding-top: 20px;
+.clearwhey-info > .content-box ul ul > li {
+    padding-top: 40px;
     margin-top: 40px 0;
     list-style:disc;
 }
@@ -305,12 +267,10 @@ header {
 }
 
 .clearwhey-info ul ul > li > h4 {
-    font-family: 'KBO-Dia-Gothic_medium';
     margin-bottom: 20px;
 }
 
 .clearwhey-info ul ul > li > p {
-    font-family: 'KBO-Dia-Gothic_light';
     font-weight: bold;
 }
 
@@ -363,13 +323,6 @@ section.best-seller {
 
 
 
-.best-seller .flex-container .slide-container {
-    width: 1135px; height: 700px;
-    display: flex;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
 .button-right {
     position: absolute;
     top: 200px;
@@ -378,9 +331,16 @@ section.best-seller {
     cursor: pointer;
 }
 
+.best-seller .flex-container .slide-container {
+    width: 1135px; height: 700px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 .slide-container > .best-info {
-    min-width: 20%;
-    margin: 80px 30px;
+    min-width: 22%;
+    margin: 80px 22px;
 }
 
 .best-seller .best-info > a > img {
@@ -437,7 +397,8 @@ section.best-seller {
     overflow: hidden;
 }
 
-.male > h2 {
+.male > h2,
+.female > h2 {
     font-size:53px;
     color: #fff;
     text-align: center;
@@ -445,25 +406,29 @@ section.best-seller {
     padding-top: 30px;
 }
     
-.male > .purpose-male {
+.male > .purpose-male,
+.female > .purpose-female {
     width: 100%;
     height: 75%;
     /* background-color: #00565f; */
 }
 
-.purpose-male > ul {
+.purpose-male > ul,
+.purpose-female > ul {
     height: 100%;
     /* background-color:#888 */
 }
 
-.purpose-male > ul > li {
+.purpose-male > ul > li, 
+.purpose-female > ul > li {
     height: 33.33%;
     position: relative;
     /* background-color:aquamarine; */
 }
 
-.purpose-male li:first-child > a,
-.purpose-male li:last-child > a {
+.purpose-list li:first-child > a,
+.purpose-list li:last-child > a {
+    font-family: 'KBO-Dia-Gothic_bold';
     position: absolute;
     left: -100%; top: 0;
     height: 100%;
@@ -478,7 +443,8 @@ section.best-seller {
     transition: all 0.3s ease-in;
 }
 
-.purpose-male li:nth-child(2) > a {
+.purpose-list li:nth-child(2) > a {
+    font-family: 'KBO-Dia-Gothic_bold';
     position: absolute;
     right: -100%; top: 0;
     height: 100%;
@@ -496,94 +462,25 @@ section.best-seller {
 }
 
 .male:hover .purpose-male li:first-child > a,
-.male:hover .purpose-male li:last-child > a{
+.male:hover .purpose-male li:last-child > a,
+.female:hover .purpose-female li:first-child > a,
+.female:hover .purpose-female li:last-child > a{
     left: 0;
 }
 
-.male:hover .purpose-male li:nth-child(2) > a{
+.male:hover .purpose-male li:nth-child(2) > a,
+.female:hover .purpose-female li:nth-child(2) > a{
     right: 0;
 }
 
-.purpose-male li:last-child > a {
+.purpose-list li:last-child > a{
     transition-delay: 0.6s;
 }
 
 /* female */
 
 .female {
-    width: 50%;
-    max-width: 1900px;
     background-image: url(../images/female.jpg);
-    background-size: cover;
-    background-position: left top;
-    align-items: center;
-    overflow: hidden;
-}
-
-.female > h2 {
-    font-size:53px;
-    color: #fff;
-    text-align: center;
-    height: 25%;
-    padding-top: 30px;
-}
-    
-.female > .purpose-female {
-    width: 100%;
-    height: 75%;
-}
-
-.purpose-female > ul {
-    height: 100%;
-}
-
-.purpose-female > ul > li {
-    height: 33.33%;
-    position: relative;
-}
-
-.purpose-female li:first-child > a,
-.purpose-female li:last-child > a {
-    position: absolute;
-    left: -100%; top: 0;
-    height: 100%;
-    width: 100%;
-    font-size: 53px;
-    text-align: center;
-    line-height: 500%;
-    color: white;
-    background-color: #88888849;
-    border: 1px solid black;
-    transition: all 0.3s ease-in;
-}
-
-.purpose-female li:nth-child(2) > a {
-    position: absolute;
-    right: -100%; top: 0;
-    height: 100%;
-    width: 100%;
-    font-size: 53px;
-    text-align: center;
-    line-height: 500%;
-    color: white;
-    background-color: #88888849;
-    border: 1px solid black;
-
-    transition: all 0.3s ease-in;
-    transition-delay: 0.3s;
-}
-
-.female:hover .purpose-female li:first-child > a,
-.female:hover .purpose-female li:last-child > a{
-    left: 0;
-}
-
-.female:hover .purpose-female li:nth-child(2) > a{
-    right: 0;
-}
-
-.purpose-female li:last-child > a {
-    transition-delay: 0.6s;
 }
 
 /* section event */
@@ -593,8 +490,7 @@ section.best-seller {
     width: 100%;
 }
 
-.download-event, 
-.recommend-event {
+.event-container {
     width: 100%;
     border-radius: 30px;
     height: 397px;
@@ -603,13 +499,8 @@ section.best-seller {
     color: #fff;
 }
 
-.download-event h2, 
-.recommend-event h2{
-    font-size: 45px;
-}
 
-.download-event > .flex-container,
-.recommend-event > .flex-container {
+.event-container > .flex-container {
     display: flex;
     align-items: center;
 }
@@ -622,29 +513,72 @@ section.best-seller {
     width: 100%;
 }
 
-.download-event {
-    background-color: #00aec5;
-    overflow: hidden;
+.content-txt {
+    text-align: center;
 }
 
-.download-event {
+.content-txt > h2{
+    font-size: 45px;
+}
+
+.content-txt > strong {
+    font-family: 'KBO Dia Gothic';
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin: 13px;
+}
+
+.content-txt > h2+ strong {
+    margin-top: 32px;
+}
+
+.content-txt > button {
+    width: 160px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 7px;
+}
+
+.content-txt > button > a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.download {
+    background-color: #00aec5;
+    overflow: hidden;
     position: relative;
 }
 
-.download-event .smartphone {
+.download .smartphone {
     position: absolute;
     top:83%;
     left:213px;
-
     transition: all 0.3s ease-in;
 }
 
-.download-event .content-txt {
+.download .content-txt {
     margin-left: 351px;
     color: #fff;
 }
 
-
-.recommend-event {
+.download .content-txt > button {
     background-color: #b9bcb8;
+}
+
+.recommend {
+    background-color: #b9bcb8;
+}
+
+.recommend .content-txt {
+    margin-left: 174px;
+}
+
+.recommend .content-txt > button {
+    background-color: #00aec5;
 }
