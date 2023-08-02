@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@keyframes shake{
+    from {transform: rotate(0);}
+    33%{transform: rotate(-30deg);}
+    66% {transform: rotate(15deg);}
+    to {transform: rotate(0deg);}
+}
+
+
 .wrapper{
     width: 1400px;
     margin: 0 auto;
@@ -48,14 +56,14 @@ header {
 
 .search-input-box input[type=search]{
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-size: 18px;
     padding: 3px;
 }
 .search-icon {
     position: absolute;
-    top: 0;
-    right: 3px;
+    top: 6px;
+    right: 5px;
 }
 
 .account-info ul{
@@ -68,7 +76,7 @@ header {
 }
 
 .account-info ul > li > a {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -82,7 +90,7 @@ header {
     background-size: contain;
 }
 
-.account-info ul > li > a:hover {
+.account-info ul > li:hover > a {
     font-weight: 900;
 }
 /* main menu */
@@ -105,6 +113,7 @@ header {
 .gnb > li > a {
     color: #fff;
     font-size: 18px;
+    padding: 5px;
 }
 
 .gnb > li > a:hover{
@@ -122,12 +131,12 @@ header {
     z-index: 1;
 }
 
-.gnb .sub-menu > li {
+.sub-menu > li {
     min-width: 15%;
     margin-right: 50px;
 }
 
-.gnb .sub-menu > li > a {
+.sub-menu > li > a {
     text-align: left;
     font-weight: bold;
     color: black;
@@ -135,18 +144,18 @@ header {
     border-bottom: 1px solid black;
 }
 
-.gnb .sub-menu > li > a:hover {
+.sub-menu > li > a:hover {
     background-color: #888;
 }
 
-.gnb .sub-menu > li > ul > li > a {
+.sub-menu > li > ul > li > a {
     padding-top: 20px;
     text-align: left;
     font-size: 18px;
     color: #000;
 }
 
-.gnb .sub-menu > li > ul > li > a:hover {
+.sub-menu > li > ul > li > a:hover {
     font-weight: bold;
 }
 
@@ -191,7 +200,7 @@ header {
     margin-bottom: 25px;
 }
 
-.main-sub > ul > li> a {
+.main-sub > ul > li > a {
     text-align: center;
     font-weight: bold;
     font-size: 21px;
@@ -199,6 +208,10 @@ header {
 
 .main-sub > ul > li> a:hover {
     color: #00565f;
+}
+
+.main-sub > ul > li> a:hover > img {
+    opacity: 0.5;
 }
 
 /*section'clear-whey'*/
@@ -340,12 +353,17 @@ section.best-seller {
 
 .slide-container > .best-info {
     min-width: 22%;
-    margin: 80px 22px;
+    margin: 80px 20px;
 }
 
-.best-seller .best-info > a > img {
+.img-box {
     width: 100%;
     margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.img-box > img {
+    width: 100%;
 }
 
 .best-info > a > strong {
@@ -365,6 +383,10 @@ section.best-seller {
     font-weight: bold;
     color: #fff;
     background-color: #008190;
+}
+
+.best-info:hover > a > .img-box > img {
+    scale: 1.1;
 }
 
 .best-info:hover > a > button {
@@ -521,16 +543,13 @@ section.best-seller {
     font-size: 45px;
 }
 
-.content-txt > strong {
+.event-container .content-txt > p {
     font-family: 'KBO Dia Gothic';
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 0.1em;
-    margin: 13px;
-}
-
-.content-txt > h2+ strong {
-    margin-top: 32px;
+    margin-top: 28px;
+    line-height: 1.3em;
 }
 
 .content-txt > button {
@@ -559,7 +578,7 @@ section.best-seller {
     position: absolute;
     top:83%;
     left:213px;
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in-out;
 }
 
 .download .content-txt {
@@ -569,6 +588,14 @@ section.best-seller {
 
 .download .content-txt > button {
     background-color: #b9bcb8;
+}
+
+.download:hover .smartphone{
+    top: 16%;
+}
+
+.download button:hover{
+    background-color: #888;
 }
 
 .recommend {
@@ -581,4 +608,36 @@ section.best-seller {
 
 .recommend .content-txt > button {
     background-color: #00aec5;
+}
+
+.recommend:hover .thumb {
+    animation: shake 1s infinite ;
+}
+
+.recommend button:hover {
+    background-color:#008190
+}
+
+/* Sponsor Section Styles */
+
+.sponser {
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.sponser > .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponser .spon-img {
+    width: 25%; height: 95px;
+}
+
+.sponser 
+
+.flex-container > div > a > img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
 }

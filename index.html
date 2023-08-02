@@ -113,7 +113,7 @@
                                 <li><a href="#">전체보기</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul><!--sub-menu-->
                 </li>
                 <li>
                     <a href="#">식품/스낵</a>
@@ -133,9 +133,8 @@
                                 <li><a href="#">비건 식품 & 스낵</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul><!--sub-menu-->
                 </li>
-
                 <li>
                     <a href="#">비타민</a>
                     <ul class="sub-menu">
@@ -145,7 +144,7 @@
                         <li><a href="#">스포츠 퍼포먼스</a></li>
                         <li><a href="#">오메가 3</a></li>
                         <li><a href="#">건강 & 웰빙</a></li>
-                    </ul>
+                    </ul><!--sub-menu-->
                 </li>
                 <li>
                     <a href="#">식이요법</a>
@@ -155,7 +154,7 @@
                         <li><a href="#">비건</a></li>
                         <li><a href="#">유기농</a></li>
                         <li><a href="#">글루텐 미포함</a></li>
-                    </ul>
+                    </ul><!--sub-menu-->
                 </li>
                 <li><a href="#">이벤트</a></li>
             </ul>
@@ -259,7 +258,9 @@
                         <div class="slide-container">
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/bestseller-cre.jpg" alt="creatine">
+                                    <div class="img-box">
+                                        <img src="./images/bestseller-cre.jpg" alt="creatine">
+                                    </div>
                                     <strong>모노 크레아틴</strong>
                                     <strong>가격: 29,900KRW</strong>
                                     <button>바로 구매</button>
@@ -267,7 +268,9 @@
                             </div>
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/bestseller-iso.jpg" alt="isolate">
+                                    <div class="img-box">
+                                        <img src="./images/bestseller-iso.jpg" alt="isolate">
+                                    </div>
                                     <strong>임펙트 웨이 아이솔레이트</strong>
                                     <strong>가격: 39,900KRW</strong>
                                     <button>바로 구매</button>
@@ -275,7 +278,9 @@
                             </div>                    
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/bestseller-clear.jpg" alt="clear-whey">
+                                    <div class="img-box">
+                                        <img src="./images/bestseller-clear.jpg" alt="clear-whey">
+                                    </div>
                                     <strong>클리어 웨이 아이솔레이트</strong>
                                     <strong>가격: 64,900KRW</strong>
                                     <button>바로 구매</button>
@@ -283,7 +288,9 @@
                             </div>
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/bestseller-pro.jpg" alt="protein">
+                                    <div class="img-box">
+                                        <img src="./images/bestseller-pro.jpg" alt="protein">
+                                    </div>
                                     <strong>임펙트 웨이 프로틴</strong>
                                     <strong>가격:19,900KRW</strong>
                                     <button>바로 구매</button>
@@ -291,7 +298,9 @@
                             </div>
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/best-seller-browine.jpg" alt="clear-whey">
+                                    <div class="img-box">
+                                        <img src="./images/best-seller-browine.jpg" alt="clear-whey">
+                                    </div>
                                     <strong>프로틴 브라우니</strong>
                                     <strong>가격: 32,900KRW</strong>
                                     <button>바로 구매</button>
@@ -299,7 +308,9 @@
                             </div>
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/best-seller-omega.jpg" alt="clear-whey">
+                                    <div class="img-box">
+                                        <img src="./images/best-seller-omega.jpg" alt="clear-whey">
+                                    </div>
                                     <strong>필수 오메가-3</strong>
                                     <strong>가격: 10,900KRW</strong>
                                     <button>바로 구매</button>
@@ -307,7 +318,9 @@
                             </div>
                             <div class="best-info">
                                 <a href="#">
-                                    <img src="./images/peanut-butter.jpg" alt="peanut-butter">
+                                    <div class="img-box">
+                                        <img src="./images/peanut-butter.jpg" alt="peanut-butter">
+                                    </div>
                                     <strong>내츄럴 피넛버터</strong>
                                     <strong>가격: 24,900KRW</strong>
                                     <button>바로 구매</button>
@@ -354,68 +367,76 @@
                             <div class="photo smartphone"><img src="./images/smartphone.gif" alt="smartphone"></div>
                             <div class="content-txt">
                                 <h2>마이프로틴 공식 앱 다운로드</h2>
-                                <strong>마이프로틴 공식 앱</strong>
-                                <strong>다운로드 & 앱 알림 ON !</strong>
-                                <strong>앱 특별혜택 받아보세요</strong> 
+                                <p>
+                                    마이프로틴 공식 앱<br>
+                                    다운로드 & 앱 알림 ON !<br>
+                                    앱 특별혜택 받아보세요<br> 
+                                </p>
                                 <button><a href="#">앱 다운로드</a></button>
                             </div>
-                        </div>
+                        </div><!--flex-container-->
                     </div>
                     <div class="event-container recommend">
                         <div class="flex-container">
                             <div class="photo thumb"><img src="./images/thumb.png" alt="thumb"></div>
                             <div class="content-txt">
                                 <h2>추천인 제도 BOOST</h2>
-                                <strong>추천인 코드 입력 후 첫 구매시</strong>
-                                <strong>첫구매 <span>무료사은품</span> 증정</strong>
-                                <strong>추천인 <span>15000원</span> 적립금 지급 </strong> 
+                                <p>
+                                    추천인 코드 입력 후 첫 구매시<br>
+                                    첫구매 <span>무료사은품</span> 증정<br>
+                                    추천인 <span>15000원</span> 적립금 지급<br>  
+                                </p>
                                 <button><a href="#">확인하기</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </div><!--content-txt-->
+                        </div><!--flex-container-->
+                    </div><!--event-container-->
+                </div><!--wrapper-->
+            </div><!--download-recommend-->
         </section>
 
         <section class="sponser">
-            <div class="wrapper">
                 <div class="flex-container">
-                    <div><a href="#"><img src="./images/spon1.png" alt="spon"></a></div>
-                    <div><a href="#"><img src="./images/spon2.png" alt="spon2"></a></div>
-                    <div><a href="#"><img src="./images/sponser 3.png" alt="spon3"></a></div>
-                    <div><a href="#"><img src="./images/spon4.JPG" alt="spon4"></a></div>
+                    <div class="spon-img"><a href="#"><img src="./images/spon1.png" alt="bestaward"></a></div>
+                    <div class="spon-img"><a href="#"><img src="./images/spon2.png" alt="no.1"></a></div>
+                    <div class="spon-img"><a href="#"><img src="./images/sponser-3.png" alt="spon-product"></a></div>
+                    <div class="spon-img"><a href="#"><img src="./images/spon4.png" alt="score"></a></div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
-        <section class="footer-sns">
-            <div class="news-sns">
-                <div class="wrapper">
-                    <div class="flex-container">
-                        <div class="news-sub">
-                            <strong>마이프로틴 뉴스레터</strong>
-                            <button><a href="#">신청하기</a></button>
+        <div class="news-sns">
+            <div class="wrapper">
+                <div class="flex-container">
+                    <div class="news-sub">
+                        <strong>마이프로틴 뉴스레터</strong>
+                        <button><a href="#">신청하기</a></button>
+                    </div>
+                    <div class="sns">
+                        <strong>마이프로틴 팔로우하기</strong>
+                        <div class="instagram">
+                            <button class="instagram-button">
+                                <a href="#">
+                                    <span class="circle"></span>>
+                                    <span class="camera-icon"></span>>
+                                </a>
+                            </button>
                         </div>
-                        <div class="sns">
-                            <strong>마이프로틴 팔로우하기</strong>
-                            <div class="instagram">
-                                <button class="instagram-button">
-                                    <div class="circle"></div>
-                                    <div class="camera-icon"></div>
-                                </button>
-                            </div>
-                            <div class="facebook">
-                                <button class="facebook-button">
-                                    <div class="icon"></div>
-                                </button>
-                            </div>
-                        </div><!--sns-->
-                    </div><!--news-sub-->
+                        <div class="facebook">
+                            <button class="facebook-button">
+                                <a href="#">
+                                    <span class="icon">f</span>>
+                                </a>
+                            </button>
+                        </div>
+                    </div><!--sns-->
                 </div><!--flex-container-->
-            </div>
+            </div><!--wrapper-->
+        </div><!--news-sns-->
+        <div class="footer-info">
+            <div class="wrapper">
 
-        </section>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
