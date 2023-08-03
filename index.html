@@ -365,7 +365,7 @@
                     <div class="event-container download">
                         <div class="flex-container">
                             <div class="photo smartphone"><img src="./images/smartphone.gif" alt="smartphone"></div>
-                            <div class="content-txt">
+                            <div class="content-box">
                                 <h2>마이프로틴 공식 앱 다운로드</h2>
                                 <p>
                                     마이프로틴 공식 앱<br>
@@ -379,12 +379,12 @@
                     <div class="event-container recommend">
                         <div class="flex-container">
                             <div class="photo thumb"><img src="./images/thumb.png" alt="thumb"></div>
-                            <div class="content-txt">
+                            <div class="content-box">
                                 <h2>추천인 제도 BOOST</h2>
                                 <p>
                                     추천인 코드 입력 후 첫 구매시<br>
-                                    첫구매 <span>무료사은품</span> 증정<br>
-                                    추천인 <span>15000원</span> 적립금 지급<br>  
+                                    첫구매 <strong>무료사은품</strong> 증정<br>
+                                    추천인 <strong>15000원</strong> 적립금 지급<br>  
                                 </p>
                                 <button><a href="#">확인하기</a></button>
                             </div><!--content-txt-->
@@ -403,6 +403,8 @@
                 </div>
         </section>
     </main>
+
+
     <footer>
         <div class="news-sns">
             <div class="subscribe">                
@@ -415,15 +417,15 @@
                         <div class="sns">
                             <strong>마이프로틴 팔로우하기</strong>
                             <div class="sns-btn">
-                                <button class="instagram-button">
+                                <button class="instagram-btn">
                                     <a href="#">
-                                        <span class="circle"></span>>
-                                        <span class="camera-icon"></span>>
+                                        <span class="camera-icon"></span>
+                                        <span class="circle"></span>
                                     </a>
                                 </button>
-                                <button class="facebook-button">
+                                <button class="facebook-btn">
                                     <a href="#">
-                                        <span class="icon">f</span>>
+                                        <span class="icon">f</span>
                                     </a>
                                 </button>
                             </div><!--sns-btn-->
@@ -438,7 +440,18 @@
                 <nav class="info-menu">
                     <ul>
                         <li>
-                            <strong>마이프로틴 소개</strong>
+                            <h3>마이프로틴 이용안내</h3>
+                            <ul class="user-guide">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">주문 배송 추적</a></li>
+                                <li><a href="#">문의하기</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">상품 반품 정책</a></li>
+                                <li><a href="#">배송정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>마이프로틴 소개</h3>
                             <ul>
                                 <li><a href="#">회사 소개</a></li>
                                 <li><a href="#">마이프로틴 파트너쉽</a></li>
@@ -449,25 +462,14 @@
                             </ul>
                         </li>
                         <li>
-                            <strong>마이프로틴 이용안내</strong>
-                            <ul>
-                                <li><a href="#">고객센터</a></li>
-                                <li><a href="#">주문 배송 추적</a></li>
-                                <li><a href="#">문의하기</a></li>
-                                <li><a href="#">자주 묻는 질문</a></li>
-                                <li><a href="#">상품 반품 정책</a></li>
-                                <li><a href="#">배송정보</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>사용정책</strong>
+                            <h3>사용정책</h3>
                             <ul>
                                 <li><a href="#">사이트 이용약관</a></li>
                                 <li><a href="#">개인정보 보호정책</a></li>
                             </ul>
                         </li>
                         <li>
-                            <strong>이벤트정보&추천인제도</strong>
+                            <h3>이벤트정보&추천인제도</h3>
                             <ul>
                                 <li><a href="#">할인 코드</a></li>
                                 <li><a href="#">추천인 제도</a></li>
@@ -475,8 +477,8 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+            </div><!--wrapper-->
+        </div><!--footer-menu-->
         <div class="info-lan">
             <div class="wrapper">
                 <div class="flex-container">
@@ -495,16 +497,18 @@
                         </div><!--content-txt-->
                     </div><!--footer-info-->
                     <div class="lan">
-                        <div class="lan-photo">
-                            <img src="./images/korea.webp" alt="korea">
+                        <div class="flex-container">
+                            <div class="lan-photo">
+                                <img src="./images/korea.webp" alt="korea">
+                            </div>
+                            <form action="#" method="post">
+                                <select name="language" id="langue" size="1">
+                                    <option value="Korean">Myprotein South Korea</option>
+                                    <option value="English">Myprotein Us</option>
+                                    <option value="Japanese">Myprotein Japan</option>
+                                </select>
+                            </form>
                         </div>
-                        <form action="#" method="post">
-                            <select name="language" method="post">
-                                <option value="Korean">korean</option>
-                                <option value="English">English</option>
-                                <option value="Japanese">Japanese</option>
-                            </select>
-                        </form>
                     </div><!--lan-->
                 </div><!--flex-container-->
             </div><!--wrapper-->

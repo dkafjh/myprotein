@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 기본 버튼 스타일 */
+        .sns-btn {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sns-btn a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sns-btn button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 인스타그램 버튼 스타일 */
+        .instagram-button {
+            background-color: #405DE6;
+        }
+
+        .instagram-button .circle {
+            background-color: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .instagram-button .camera-icon {
+            background-color: #fff;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 10px solid #000;
+            margin-top: 1px;
+        }
+
+        /* 페이스북 버튼 스타일 */
+        .facebook-button {
+            background-color: #1877F2;
+        }
+
+        .facebook-button .icon {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sns-btn">
+        <a href="https://www.instagram.com" target="_blank">
+            <button class="instagram-button">
+                <span class="circle"></span>
+                <span class="camera-icon"></span>
+            </button>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <button class="facebook-button">
+                <span class="icon">f</span>
+            </button>
+        </a>
+    </div><!--sns-btn-->
+</body>
+</html>
+
