@@ -19,7 +19,7 @@
                     </div>
                     <div class="search-account">
                         <div class="search-input-box">
-                            <form action="#">
+                            <form action="#" method="post">
                                 <input type="search" name="search" class="search" value="검색하기">
                                 <div class="search-icon">
                                     <img src="./images/searchicon.png" alt="search-icon">
@@ -405,38 +405,110 @@
     </main>
     <footer>
         <div class="news-sns">
-            <div class="wrapper">
-                <div class="flex-container">
-                    <div class="news-sub">
-                        <strong>마이프로틴 뉴스레터</strong>
-                        <button><a href="#">신청하기</a></button>
-                    </div>
-                    <div class="sns">
-                        <strong>마이프로틴 팔로우하기</strong>
-                        <div class="instagram">
-                            <button class="instagram-button">
-                                <a href="#">
-                                    <span class="circle"></span>>
-                                    <span class="camera-icon"></span>>
-                                </a>
-                            </button>
+            <div class="subscribe">                
+                <div class="wrapper">
+                    <div class="flex-container">
+                        <div class="news-sub">
+                            <strong>마이프로틴 뉴스레터</strong>
+                            <button><a href="#">신청하기</a></button>
                         </div>
-                        <div class="facebook">
-                            <button class="facebook-button">
-                                <a href="#">
-                                    <span class="icon">f</span>>
-                                </a>
-                            </button>
-                        </div>
-                    </div><!--sns-->
-                </div><!--flex-container-->
-            </div><!--wrapper-->
+                        <div class="sns">
+                            <strong>마이프로틴 팔로우하기</strong>
+                            <div class="sns-btn">
+                                <button class="instagram-button">
+                                    <a href="#">
+                                        <span class="circle"></span>>
+                                        <span class="camera-icon"></span>>
+                                    </a>
+                                </button>
+                                <button class="facebook-button">
+                                    <a href="#">
+                                        <span class="icon">f</span>>
+                                    </a>
+                                </button>
+                            </div><!--sns-btn-->
+                        </div><!--sns-->
+                    </div><!--flex-container-->
+                </div><!--wrapper-->
+            </div><!--subscribe-->
         </div><!--news-sns-->
-        <div class="footer-info">
+        <div class="footer-menu">
             <div class="wrapper">
-
+                <h2>마이프로틴 회사정보</h2>
+                <nav class="info-menu">
+                    <ul>
+                        <li>
+                            <strong>마이프로틴 소개</strong>
+                            <ul>
+                                <li><a href="#">회사 소개</a></li>
+                                <li><a href="#">마이프로틴 파트너쉽</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">Modern Slavery Statement</a></li>
+                                <li><a href="#">품질관리정책</a></li>
+                                <li><a href="#">공급 업체 서약</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>마이프로틴 이용안내</strong>
+                            <ul>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">주문 배송 추적</a></li>
+                                <li><a href="#">문의하기</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">상품 반품 정책</a></li>
+                                <li><a href="#">배송정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>사용정책</strong>
+                            <ul>
+                                <li><a href="#">사이트 이용약관</a></li>
+                                <li><a href="#">개인정보 보호정책</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>이벤트정보&추천인제도</strong>
+                            <ul>
+                                <li><a href="#">할인 코드</a></li>
+                                <li><a href="#">추천인 제도</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+        <div class="info-lan">
+            <div class="wrapper">
+                <div class="flex-container">
+                    <div class="footer-info">
+                        <div class="photo">
+                            <img src="./images/THG.png" alt="Thg">
+                        </div>
+                        <div class="content-txt">
+                            <p>
+                                2023 Myprotein.co.kr © The Hut.com Limited, a company registered in England and Wales
+                            </p> 
+                            <address>
+                                (company number 
+                                05016010) whose registered address is Voyager House, Chicago Avenue, Manchester Airport, M90 3DQ.
+                            </address>
+                        </div><!--content-txt-->
+                    </div><!--footer-info-->
+                    <div class="lan">
+                        <div class="lan-photo">
+                            <img src="./images/korea.webp" alt="korea">
+                        </div>
+                        <form action="#" method="post">
+                            <select name="language" method="post">
+                                <option value="Korean">korean</option>
+                                <option value="English">English</option>
+                                <option value="Japanese">Japanese</option>
+                            </select>
+                        </form>
+                    </div><!--lan-->
+                </div><!--flex-container-->
+            </div><!--wrapper-->
+        </div><!--info-lan-->
     </footer>
 </body>
 </html>
