@@ -54,7 +54,7 @@ header {
 
 /* account */
 
-.search-input-box input[type=search]{
+.search-input-box input[type="search"]{
     width: 100%;
     margin-bottom: 7px;
     font-size: 18px;
@@ -62,6 +62,14 @@ header {
     position: relative;
     border: 1px solid #454749;
     border-radius: 5px;
+}
+
+ /* "x" 표시를 숨기는 CSS */
+.search-input-box input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+.search-input-box input[type="search"]::-ms-clear {
+    display: none;
 }
 
 .search-icon {
@@ -771,8 +779,8 @@ footer {
 }
 
 .info-menu ul > li > a{
-    padding: 5px 0;
-    margin: 4px 0;
+    padding: 3px 0;
+    margin: 7px 0;
 }
 
 .info-menu .user-guide > li > a {
